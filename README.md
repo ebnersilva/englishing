@@ -12,6 +12,7 @@
   <a href="#rocket-about-the-system">About the system</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#pencil2-figma-layout">Figma layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-how-to-use">How to use?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#page_facing_up-roadmap">Roadmap</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 ## :rocket: About the system
@@ -29,5 +30,13 @@
 - **`cd englishing`**
 - Run **`npm install`**
 - Start the application with **`npm run dev`**
+
+## :page_facing_up: Roadmap
+
+- [X] - Figma Layout
+- [X] - Base project with nextJS
+- [ ] - UI components respecting design system
+- [ ] - Countdown
+- [ ] - Logic to change the verbs with the time stipulated on countdown
 
 Feito com 💜 by <a href="https://github.com/ebnersilva">Ebner Silva</a> and <a href="https://github.com/carlosrodrigues94">Carlos Rodrigues</a> :wave:
