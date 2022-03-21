@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <Title>ENGLISHING</Title>
       </Header>
 
-      <MiddleContainer />
+      <MiddleContainer title="Test"/>
     </Container>
   )
 }
