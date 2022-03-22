@@ -1,9 +1,9 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from 'next';
+import Head from 'next/head';
 
-import { Container, Header, Title } from '@/styles/home'
-import MiddleContainer from '@/components/MiddleContainer'
-
+import { Container, Header, Title } from '@/styles/home';
+import MiddleContainer from '@/components/MiddleContainer';
+import { verbs } from '@/constants/verbs';
 const Home: NextPage = () => {
   return (
     <Container>
@@ -17,9 +17,9 @@ const Home: NextPage = () => {
         <Title>ENGLISHING</Title>
       </Header>
 
-      <MiddleContainer title="Test"/>
+      <MiddleContainer title="2:35" verb={verbs[0]} />
     </Container>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
