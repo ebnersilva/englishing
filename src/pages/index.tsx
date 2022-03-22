@@ -3,8 +3,32 @@ import Head from 'next/head';
 
 import { Container, Header, Title } from '@/styles/home';
 import MiddleContainer from '@/components/MiddleContainer';
-import { verbs } from '@/constants/verbs';
+import { verbs, Verb } from '@/constants/verbs';
+import useCountdown from '@/hooks/useCountdown';
+import { useEffect, useState } from 'react';
+
 const Home: NextPage = () => {
+  const { minutes, seconds } = useCountdown();
+  const timeTitleMiddleContainer = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+  const [currentVerbIndex, setCurrentVerbIndex] = useState(0);
+  const [currentVerb, setCurrentVerb] = useState<Verb | null>(null);
+
+  useEffect(() => {
+    if (minutes === 0 && seconds === 0) {
+      setCurrentVerbIndex((prevState) => {
+        if (prevState === verbs.length) {
+          return 0;
+        }
+        return prevState + 1;
+      })
+    }
+  }, [minutes, seconds])
+
+  useEffect(() => {
+    setCurrentVerb(verbs[currentVerbIndex])
+  }, [currentVerbIndex]);
+
   return (
     <Container>
       <Head>
@@ -17,7 +41,9 @@ const Home: NextPage = () => {
         <Title>ENGLISHING</Title>
       </Header>
 
-      <MiddleContainer title="2:35" verb={verbs[0]} />
+      {currentVerb && (
+        <MiddleContainer title={timeTitleMiddleContainer} verb={currentVerb} />
+      )}
     </Container>
   );
 };
