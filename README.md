@@ -35,8 +35,11 @@
 
 - [X] - Figma Layout
 - [X] - Base project with nextJS
-- [ ] - UI components respecting design system
-- [ ] - Countdown
-- [ ] - Logic to change the verbs with the time stipulated on countdown
+- [X] - UI component middle container respecting design system
+- [ ] - UI component info container respecting design system
+- [ ] - UI component config container respecting design system
+- [X] - Countdown
+- [X] - Logic to change the verbs with the time stipulated on countdown
+- [ ] - Logic to make with decorated the verb
 
 Feito com 💜 by <a href="https://github.com/ebnersilva">Ebner Silva</a> and <a href="https://github.com/carlosrodrigues94">Carlos Rodrigues</a> :wave:
